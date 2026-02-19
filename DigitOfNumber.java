@@ -3,7 +3,7 @@ public class DigitOfNumber {
   public static void main(String[] args) {
       
   
-  Scanner sc=new Scanner(System.in);
+  try(Scanner sc=new Scanner(System.in)){
   System.out.println("Enter a number:");
   int number=sc.nextInt();
   int nod=0;
@@ -19,6 +19,7 @@ public class DigitOfNumber {
     System.out.println(digit);
     number=number%div;
     div=div/10;
+  }
   }
 }
 }
